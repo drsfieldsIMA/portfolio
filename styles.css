@@ -16,9 +16,9 @@ body {
 
 .ticker-wrapper {
   position: relative;
-  max-width: 800px;
-  margin: auto;
-  padding-top: 140px;
+    max-width: 100%;
+    margin: 0 0;
+    padding-top: 0px;
 }
 
 .bigHeading {
@@ -118,12 +118,16 @@ p {
 }
 
 .info_box p {
-  background-color: #3b7fd9;
+  background-color: transparent;
   color: #e6ebf3;
   padding-top: 0rem;
   padding-left: 0rem;
   padding-right: 0rem;
   padding-bottom: 0rem;
+}
+
+#target{
+  color: #3b7fd9;
 }
 
 .wrapper {
@@ -237,8 +241,8 @@ p {
 }
 .info_box {
   display: block;
-  width: 84%;
-  margin: 0 5%;
+  width: 95%;
+  margin: 0 5% !important;
   text-align: justify;
   color: #3b7fd9;
 }
