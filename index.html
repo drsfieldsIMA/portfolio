@@ -16,9 +16,8 @@
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
   <link href="styles.css" rel="stylesheet" />
-
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 
 <body>
@@ -61,39 +60,29 @@
   <div class="wrapper">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
-          <div class="top_img m-lg-4">
-            <div class="corner_2"><span>
+        <div class=" col-sm-12 col-lg-6">
+          <div class="top_img m-lg-1">
+            <div class="corner">
                 <h1>Shaun Fields</h1>
-              </span>
               <img src="Passport_2.jpg" alt="shaun fields photograph" id="image_centre"
                 style="height:200px; width: auto;">
             </div>
           </div>
         </div>
         <div class="col-sm-12 col-lg-6">
-          <div class="info_box m-lg-4">
+          <div class="info_box m-lg-1">
             <div class="responsive-text" id="responsive-text">
-            <p id="target">I am passionate about solving a variety of problems using computational code. For example, this responsive text that you are now reading is tracked with javascript if each word is on the blue or beige background. This is done using logic and abstracted algorithms.I am developing websites currently with Javascript, Next, React and HTML. I have also taught engineering undergrads how to utilize engineering software and Virtual Reality applications. My aerospace doctorate was in partnership with the European Space and Technology Centre,ESA.</p>
+            <p id="target">I am passionate about solving a variety of problems using computational code. For example, this responsive text that you are now reading is tracked with javascript. Each words position to the wedge edge is calculated it is then given either a blue or beige colour. This is done using logic and abstracted algorithms.I am developing websites currently with Javascript, Next, React and HTML. I have also taught engineering undergrads how to utilize engineering software and Virtual Reality applications. My aerospace doctorate was in partnership with the European Space and Technology Centre,ESA.</p>
           </div>
           </div>
         </div>
       </div>
 
-      <button onclick="getPoint()">
-        Get coordinate
-      </button>
-
-      <p id="output"></p>
-      <p id="lastOutput"></p>
-
       <div class="row">
         <div class=" col-sm-12 col-lg-6">
           <div class="top_img m-lg-4">
-            <div class="corner"><span>
-                <h2>Education</h2>
-              </span>
-
+            <div class="corner">
+              <h2>Education</h2>
               <img src="beach_photo.jpg" alt="shaun fields with a surfboard on a beach in " id="image_centre"
                 style="width:300px; height: auto;">
             </div>
@@ -196,7 +185,7 @@
       " (" + targetlast.offsetLeft + ", "
       + targetlast.offsetTop + ")";
   }
-
+  console.log("window-width",$(window).width());
   var copystr = document.getElementById("target").innerHTML;
   console.log(copystr)
   let stringWithoutLineBreaks = copystr.replace(/[\r\n]+/gm, "");//remove those line breaks
@@ -211,18 +200,17 @@ function addElement (stringElements) {
   // create a new div element
   let newDiv = document.createElement("span");
   newDiv.classList.add('test_0')
-  newDiv.classList.add('d-inline-flex')
+  newDiv.setAttribute("ID",'test_0')
+  newDiv.classList.add('d-inline-block')
   // and give it some content
 //  let newContent = document.createTextNode(strings[0]);
   newDiv.innerHTML = strings[0]+'\u00A0';
-
   // add the text node to the newly created div
-
   // add the newly created element and its content into the DOM
   let currentDiv = document.getElementById("target");
   currentDiv.innerText = "";
-  currentDiv.after(newDiv);
-  currentDiv.classList.add('d-none');
+  currentDiv.append(newDiv);
+  //currentDiv.classList.add('d-none');
   let HTML =""
    for (let i=1; i<stringElements; i=i+1){
     
@@ -230,7 +218,7 @@ function addElement (stringElements) {
    // newDiv = document.createElement("p");
     newDiv = document.createElement('span')
     newDiv.innerHTML = strings[i]+'\u00A0';
-    newDiv.classList.add('d-inline-flex')
+    newDiv.classList.add('d-inline-block')
     console.log("newDiv=", newDiv)
     let newString='test_'+i;
     console.log("newstring=", newString)
@@ -251,10 +239,8 @@ function addElement (stringElements) {
 }
 console.log("Html=",HTML)
 //newDiv.innerHTML=currentDiv
-currentDiv.innerHTML=HTML
+//currentDiv.innerHTML=HTML
 currentDiv.classList.add('d-block');
-let whiteDiv = document.getElementById("test_9");
-whiteDiv.classList.add('white_text');
 let target= document.getElementById("test_5")
 let yyy=""
 let test_run = document.getElementById("responsive-text");
@@ -262,7 +248,7 @@ for (let i=1; i<stringElements; i=i+1){
   yyy ='test_'+i.toString()
   let newTarget= document.getElementById(yyy)
   console.log(yyy)
-  if (newTarget.offsetLeft>(target.offsetLeft-(1.5*(newTarget.offsetTop-test_run.offsetTop)))){
+  if (newTarget.offsetLeft>(target.offsetLeft+110-(2*(newTarget.offsetTop-test_run.offsetTop)))){
     newTarget.classList.add('white_text');
   }
 }
