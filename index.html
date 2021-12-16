@@ -70,6 +70,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-lg-6">
+         <!-- <img src="background_big.svg" alt="blue wedge" class="responsive-background"> -->
           <div class="info_box m-lg-1">
             <div class="responsive-text" id="responsive-text">
             <p id="target">I am passionate about solving a variety of problems using computational code. For example, this responsive text that you are now reading is tracked with javascript. Each words position to the wedge edge is calculated it is then given either a blue or beige colour. This is done using logic and abstracted algorithms.I am developing websites currently with Javascript, Next, React and HTML. I have also taught engineering undergrads how to utilize engineering software and Virtual Reality applications. My aerospace doctorate was in partnership with the European Space and Technology Centre,ESA.</p>
@@ -194,16 +195,15 @@
   console.log(strings)
   const stringElements=strings.length;
   console.log(stringElements);
-  document.body.onload = addElement(stringElements);
+  document.body.onload = addTextColor(stringElements);
 
-function addElement (stringElements) {
+function addTextColor(stringElements) {
   // create a new div element
   let newDiv = document.createElement("span");
   newDiv.classList.add('test_0')
   newDiv.setAttribute("ID",'test_0')
   newDiv.classList.add('d-inline-block')
   // and give it some content
-//  let newContent = document.createTextNode(strings[0]);
   newDiv.innerHTML = strings[0]+'\u00A0';
   // add the text node to the newly created div
   // add the newly created element and its content into the DOM
@@ -213,34 +213,20 @@ function addElement (stringElements) {
   //currentDiv.classList.add('d-none');
   let HTML =""
    for (let i=1; i<stringElements; i=i+1){
-    
-    console.log(i);
-   // newDiv = document.createElement("p");
     newDiv = document.createElement('span')
     newDiv.innerHTML = strings[i]+'\u00A0';
     newDiv.classList.add('d-inline-block')
-    console.log("newDiv=", newDiv)
     let newString='test_'+i;
     console.log("newstring=", newString)
     newDiv.setAttribute("ID",newString);
     newDiv.classList.add(newString);
-    
- //   newContent = document.createTextNode(strings[i]+'\u00A0');
-    
- //   console.log("newContent=", newContent);
- //   let textNode=newDiv.appendChild(newContent);
- //   console.log("textNode=", textNode); 
     let j=i-1;
-    console.log("j=", j);
     let currentDiv = document.querySelector(".test_"+j);
     console.log("currentDiv=", currentDiv);
     document.querySelector('.test_'+j).after(newDiv);
     HTML=HTML+currentDiv;
 }
-console.log("Html=",HTML)
-//newDiv.innerHTML=currentDiv
-//currentDiv.innerHTML=HTML
-currentDiv.classList.add('d-block');
+currentDiv.classList.add('d-inline-block');
 let target= document.getElementById("test_5")
 let yyy=""
 let test_run = document.getElementById("responsive-text");
@@ -248,9 +234,9 @@ for (let i=1; i<stringElements; i=i+1){
   yyy ='test_'+i.toString()
   let newTarget= document.getElementById(yyy)
   console.log(yyy)
-  if (newTarget.offsetLeft>(target.offsetLeft+110-(2*(newTarget.offsetTop-test_run.offsetTop)))){
+  if (newTarget.offsetLeft>(target.offsetLeft+300-(3*(newTarget.offsetTop-test_run.offsetTop)))){
     newTarget.classList.add('white_text');
-  }
+  };
 }
 }
 
