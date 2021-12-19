@@ -22,7 +22,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
       <a class="navbar-brand" href="#"><img src="logo_sf.svg" alt="S Fields web designer logo" class="logo"
           style="width:70px; height: auto;"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -91,7 +91,7 @@
         </div>
         <div class="col-sm-12 col-lg-6">
           <div class="info_box m-lg-4">
-            <p class="white_text">EPAX AS Ålesund System Engineer Maintenance Department
+            <p id="education">EPAX AS Ålesund System Engineer Maintenance Department
               2020 MARCH – 2020 JULY
 
               • I managed to centralize manuals, safety instructions, material certifications and invoices for over 1000
@@ -115,6 +115,39 @@
     <div class="container_2">
     </div>
   </div>
+  <div class="wrapper_2">
+    <div class="container_3 row">
+      <div><span>
+        <h1 class="white_text">Github</h1>
+      </span>
+      </div>
+      <div class="col-lg-4">
+        
+        <div class="github-group">
+            <div>
+            <a class="btn btn-large btn-primary btn-link" href="https://github.com/Noroff-FEU-Assignments/css-frameworks-ca-drsfieldsIMA/tree/main"><i
+                class="fas fa-link pull-left"></i> CSS Framewroks CA</a>
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="github-group">
+          <div>
+        <a class="btn btn-large btn-primary btn-link" href="https://github.com/Noroff-FEU-Assignments/workflow-2-course-assignment-drsfieldsIMA/tree/updated"><i
+          class="fas fa-link pull-left"></i>Work Flow CA</a>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="github-group">
+          <div>
+        <a class="btn btn-large btn-primary btn-link" href="https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-drsfieldsIMA/tree/updated"><i
+          class="fas fa-link pull-left"></i>JavaScript Frameworks CA</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="wrapper_2">
     <div class="container_3 row">
@@ -129,7 +162,7 @@
       <div class="col-lg-9">
         <div class="link-pair">
           <a href="http://www.fishcab.no/portfolio/hikes/"><img src="Decor.png" alt="Nature" id="image"
-              class="link-images m-5"></img></a>
+              class="link-images"></img></a>
           <a class="btn btn-large btn-primary btn-link" href="http://www.fishcab.no/portfolio/hikes/"><i
               class="fas fa-link pull-left"></i> Decor V 1</a>
         </div>
@@ -138,19 +171,19 @@
   </div>
 
   <div class="wrapper">
-    <div class="container row">
-      <div class="col-lg-3">
+    <div class="container botttom-container row">
+      <div class="col-lg-5">
         <div class="link-pair">
           <a href="http://www.fishcab.no/portfolio/shoes/"><img src="shoe.png" alt="Nature" id="image"
-              class="link-images m-1"></a>
+              class="link-images"></a>
           <a class="btn btn-large btn-primary btn-link" href="http://www.fishcab.no/portfolio/shoes/"><i
               class="fas fa-link pull-left"></i>Letha V 1</a>
         </div>
       </div>
-      <div class="col-lg-9">
+      <div class="col-lg-7">
         <div class="link-pair">
           <a href="https://www.bfields.co.uk/semester_exam/index.html"><img src="car.png" alt="Nature" id="image"
-              class="link-images m-1" style="border: 16px ridge #e6ebf3;"></a>
+              class="link-images" style="border: 16px ridge #e6ebf3;"></a>
           <a class="btn btn-large btn-primary btn-link" href="https://www.bfields.co.uk/semester_exam/index.html"><i
               class="fas fa-link pull-left"></i>Car Catalogue V 1</a>
         </div>
@@ -197,24 +230,26 @@
   console.log(stringElements);
   var viewportWidth = $(window).width();
   console.log("window-width",viewportWidth);
-  if ( viewportWidth>1100 && viewportWidth<1530 ){
-   var grd=3;
+  window.onload= async function(){
+  if ( viewportWidth>991 && viewportWidth<1530 ){
+    document.getElementById("target").classList.add("transparent-bg");
+    document.getElementById("education").classList.add("transparent-bg");
+    document.getElementById("education").style.color = '#ffffff';
+  var grd=3;
    var intrcpt=390;
-   document.body.onload = addTextColor(stringElements,grd,intrcpt);
-   document.body.onresize = addTextColor(stringElements,grd,intrcpt);
+    addTextColor(stringElements,grd,intrcpt);
   }else if ( viewportWidth>1530){
+    document.getElementById("target").classList.add("transparent-bg");
+    document.getElementById("education").classList.add("transparent-bg");
+    document.getElementById("education").style.color = '#ffffff';
    var grd=3;
    var intrcpt=490; 
-   document.body.onload = addTextColor(stringElements,grd,intrcpt);
-   document.body.onresize = addTextColor(stringElements,grd,intrcpt);
+  addTextColor(stringElements,grd,intrcpt);
   }else{
-   var grd=3.1;
-   var intrcpt=390;
-   document.body.onload = addTextColor(stringElements,grd,intrcpt);
-   document.body.onresize = addTextColor(stringElements,grd,intrcpt);
+   
   }
    console.log("grd",grd)
-     
+}
      
 
 function addTextColor(stringElements,grd,intrcpt) {

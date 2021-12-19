@@ -136,12 +136,18 @@ p {
 
 #target{
   color: #3b7fd9;
+  background-color: #ffc8a2;
   display: flex!important;
    max-width: 480px!important;
    min-width: 100%!important;
    text-align: justify!important;
    flex-wrap: wrap;
    justify-content: space-between; 
+}
+
+#education{
+  color: #3b7fd9;
+  background-color: #ffc8a2;
 }
 
 .wrapper {
@@ -166,7 +172,7 @@ p {
 }
 
 .container {
-  height: 1000px;
+  height: fit-content;
   width: 100%;
   max-width: 100% !important;
   position: relative;
@@ -174,6 +180,7 @@ p {
   background-size: cover;
   overflow: hidden;
   z-index: 2;
+  margin-bottom: 2rem;
 }
 
 .design_container {
@@ -344,8 +351,7 @@ p {
 }
 #image {
   display: block;
-  margin-left: auto !important;
-  margin-right: 0px !important;
+  margin: 0 auto;
   width: auto;
   border: 16px ridge #3b7fd9;
   padding: 5px;
@@ -360,16 +366,31 @@ p {
 }
 
 .link-pair {
+  display: inline-block;
   width: 100%;
   height: fit-content;
   position: relative;
+  flex-direction: column;
+   margin-bottom: 2rem;
 }
+
+.github-group{
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
 .btn-link {
-  position: absolute !important;
-  top: 240px !important;
-  left: 0 !important;
+  display: block;
+  position: relative !important;
   padding: 16px !important;
   color: #e6ebf3 !important;
+  width: 250px;
+  height: fit-content!important;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 .table {
@@ -388,7 +409,21 @@ footer {
   height: 2.5rem !important;
 }
 
+.transparent-bg{
+  background: transparent!important;
+}
+
+@media (min-width: 991px){
+  .botttom-container{
+    height: 1000px!important;
+  }
+}
+
 @media only screen and (min-width: 1240px) {
+  .container{
+    height: fit-content;
+  }
+
   .container_2 {
     height: 580px;
     position: relative;
@@ -410,10 +445,6 @@ footer {
 
   .link-images {
     height: 320px !important;
-  }
-
-  .container {
-    height: 740px;
   }
 
   .info_box p {
