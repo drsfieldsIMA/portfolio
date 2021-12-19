@@ -136,10 +136,12 @@ p {
 
 #target{
   color: #3b7fd9;
-  display: block;
-  text-align: justify!important;
+  display: flex!important;
    max-width: 480px!important;
-   min-width: 100%!important; 
+   min-width: 100%!important;
+   text-align: justify!important;
+   flex-wrap: wrap;
+   justify-content: space-between; 
 }
 
 .wrapper {

@@ -195,9 +195,29 @@
   console.log(strings)
   const stringElements=strings.length;
   console.log(stringElements);
-  document.body.onload = addTextColor(stringElements);
+  var viewportWidth = $(window).width();
+  console.log("window-width",viewportWidth);
+  if ( viewportWidth>1100 && viewportWidth<1530 ){
+   var grd=3;
+   var intrcpt=390;
+   document.body.onload = addTextColor(stringElements,grd,intrcpt);
+   document.body.onresize = addTextColor(stringElements,grd,intrcpt);
+  }else if ( viewportWidth>1530){
+   var grd=3;
+   var intrcpt=490; 
+   document.body.onload = addTextColor(stringElements,grd,intrcpt);
+   document.body.onresize = addTextColor(stringElements,grd,intrcpt);
+  }else{
+   var grd=3.1;
+   var intrcpt=390;
+   document.body.onload = addTextColor(stringElements,grd,intrcpt);
+   document.body.onresize = addTextColor(stringElements,grd,intrcpt);
+  }
+   console.log("grd",grd)
+     
+     
 
-function addTextColor(stringElements) {
+function addTextColor(stringElements,grd,intrcpt) {
   // create a new div element
   let newDiv = document.createElement("span");
   newDiv.classList.add('test_0')
@@ -227,14 +247,15 @@ function addTextColor(stringElements) {
     HTML=HTML+currentDiv;
 }
 currentDiv.classList.add('d-inline-block');
-let target= document.getElementById("test_5")
+let target= document.getElementById("test_1")
 let yyy=""
 let test_run = document.getElementById("responsive-text");
+
 for (let i=1; i<stringElements; i=i+1){
   yyy ='test_'+i.toString()
   let newTarget= document.getElementById(yyy)
   console.log(yyy)
-  if (newTarget.offsetLeft>(target.offsetLeft+300-(3*(newTarget.offsetTop-test_run.offsetTop)))){
+  if (newTarget.offsetLeft>(target.offsetLeft+intrcpt-(grd*(newTarget.offsetTop-test_run.offsetTop)))){
     newTarget.classList.add('white_text');
   };
 }
