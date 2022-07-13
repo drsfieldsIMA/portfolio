@@ -32,7 +32,7 @@ $breakpoint_xxl: 1600px;
   display: block;
   position: absolute;
   font-style: italic;
-  font-size: 40px;
+  font-size: 20px;
   background: crimson;
   color: #ffff;
   text-transform: uppercase;
@@ -48,7 +48,7 @@ $breakpoint_xxl: 1600px;
   content: "";
   width: 0;
   position: absolute;
-  border-width: 67px;
+  border-width: 40px;
   border-style: solid;
   top: 0;
   z-index: -1;
@@ -56,7 +56,7 @@ $breakpoint_xxl: 1600px;
 
 .bigHeading::before {
   border-color: crimson transparent transparent transparent;
-  right: -67px;
+  right: -41px;
 }
 
 .bigHeading::after {
@@ -66,7 +66,7 @@ $breakpoint_xxl: 1600px;
 }
 
 .text-update {
-  height: 70px;
+  height: 40px;
   width: 100%;
   background: #3b7fd9;
   overflow: hidden;
@@ -87,9 +87,9 @@ $breakpoint_xxl: 1600px;
   margin: 0;
   font-weight: 700;
   text-align: left;
-
   transform: translateX(100%);
   animation: moving 30s linear infinite;
+  max-height: 30px;
 }
 
 @keyframes moving {
@@ -453,6 +453,16 @@ footer {
     min-width: fit-content !important;
     justify-content: center;
 }
+.bio{
+font-size: 17px;
+    padding: 20px;
+    background-color: transparent;
+    color: #3b7fd9;
+    width: 91%;
+    margin: 15rem 8%;
+    text-align: justify!important;
+}
+
 @media only screen and (min-width: $breakpoint_sm) {
 
   .image-grid {
@@ -482,6 +492,23 @@ footer {
 }
 
 @media only screen and (min-width: $breakpoint_md) {
+
+  .text-update {
+    height: 70px;
+    width: 100%;
+    background: #3b7fd9;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    left: 12px;
+  }
+
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
     width: 100%;
@@ -514,6 +541,22 @@ footer {
 .desktop_img{
   padding: 0 35px!important;
 }
+
+.bigHeading {
+  display: block;
+  position: absolute;
+  font-style: italic;
+  font-size: 40px;
+  background: crimson;
+  color: #ffff;
+  text-transform: uppercase;
+  padding: 5px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  z-index: 2;
+  left:-1px;
+}
+
 
 }
 
