@@ -9,10 +9,6 @@ function Home() {
 	let myTarget = useRef();
 	let myOutput = useRef();
 
-	let target = myTarget.current;
-
-	let output = myOutput.current;
-
 	return (
 		<>
 			<div>
