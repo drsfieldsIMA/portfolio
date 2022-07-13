@@ -37,5 +37,9 @@ body {
   }
   
   p {
-    font: "Serifa";
+    font-family: "Serifa";
   }
+
+  .h2, h2 {
+    font-size: calc(1.025rem + .2vw);
+}
