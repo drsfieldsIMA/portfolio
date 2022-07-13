@@ -6,9 +6,6 @@ import { useRef } from "react";
 import { Card } from "../node_modules/react-bootstrap/esm/index";
 
 function Home() {
-	let myTarget = useRef();
-	let myOutput = useRef();
-
 	return (
 		<>
 			<div>
