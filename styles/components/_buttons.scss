@@ -1,0 +1,38 @@
+.btn-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px;
+    grid-gap: 10px;
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  .btn-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 21px;
+    padding: 14px 21px
+  }
+  
+  .btn-primary{
+    display: flex;
+      flex-direction: row;
+      justify-content: center;
+    padding: 14px 21px;
+    border-radius: 4px;
+    background-color: #3b7fd9!important;
+  }
+
+  .btn{
+    max-height: 50px!important;
+    background-color: #e6ebf3!important;
+    color: #3b7fd9!important;
+  }
+
+  .btn-link {
+    position: absolute !important;
+    top: 240px !important;
+    left: 0 !important;
+    padding: 16px !important;
+    color: #e6ebf3 !important;
+  }

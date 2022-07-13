@@ -241,33 +241,6 @@ display: inline-flex;
   padding: 21px 0;
 }
 
-
-.btn-grid{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 50px;
-  grid-gap: 10px;
-  width: 90%;
-  margin-left: 5%;
-}
-
-.btn-block{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 21px;
-  padding: 14px 21px
-}
-
-.btn-primary{
-  display: flex;
-    flex-direction: row;
-    justify-content: center;
-  padding: 14px 21px;
-  border-radius: 4px;
-  background-color: #3b7fd9!important;
-}
-
-
 .two{
   max-height: 200px;
   min-width: 100%;
@@ -288,12 +261,6 @@ display: inline-flex;
   background: url("../public/portfolio_bkg_3.svg") no-repeat center center;
   background-size: cover;
   min-height: 50vh!important;
-}
-
-.btn{
-  max-height: 50px!important;
-  background-color: #e6ebf3!important;
-  color: #3b7fd9!important;
 }
 
 .bg-light {
@@ -445,13 +412,6 @@ display: inline-flex;
   width: 100%;
   height: fit-content;
   position: relative;
-}
-.btn-link {
-  position: absolute !important;
-  top: 240px !important;
-  left: 0 !important;
-  padding: 16px !important;
-  color: #e6ebf3 !important;
 }
 
 .table {
