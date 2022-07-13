@@ -1,3 +1,7 @@
+@import "./base/reset";
+@import  "./components/buttons";
+@import "./components/navigation";
+
 @font-face {
   font-family: "Serifa";
   src: url(../public/fonts/SerifaStd-Black.otf);
@@ -10,15 +14,12 @@
 	font-style: normal;
 }
 
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-  font-family:  "protipo", sans-serif;
-}
-nav{
-  font-family: "Serifa";
-}
+$breakpoint_xs: 360px;
+$breakpoint_sm: 768px;
+$breakpoint_md: 1024px;
+$breakpoint_lg: 1280px;
+$breakpoint_xl: 14400px;
+$breakpoint_xxl: 1600px;
 
 .ticker-wrapper {
   position: relative;
@@ -102,22 +103,6 @@ nav{
 
 .x-scroll-disabled {
   overflow-x: hidden;
-}
-
-body {
-  background-color: #ffc8a2 !important;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Serifa";
-  color: #3b7fd9;
-}
-
-p {
-  font: "Serifa";
 }
 
 .d-none{
@@ -291,7 +276,7 @@ display: inline-flex;
   min-height: 178vh!important;
    h2{
     display: flex;
-    padding-top: 7rem;
+    padding-top: 2rem;
     flex-direction: row;
     justify-content: center;
    }
@@ -508,7 +493,7 @@ footer {
     min-width: fit-content !important;
     justify-content: center;
 }
-@media only screen and (min-width: 690px) {
+@media only screen and (min-width: $breakpoint_sm) {
 
   .image-grid {
     display: grid;
@@ -536,7 +521,7 @@ footer {
 
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: $breakpoint_md) {
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
     width: 100%;
@@ -573,7 +558,7 @@ footer {
 }
 
 
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: $breakpoint_lg) {
   .container_2 {
     height: 580px;
     position: relative;

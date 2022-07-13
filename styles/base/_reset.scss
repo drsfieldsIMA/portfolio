@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Serifa";
+    src: url(../../public/fonts/SerifaStd-Black.otf);
+  }
+  
+  @font-face {
+      font-family: "protipo", sans-serif;
+      src: url("https://use.typekit.net/yri7fbm.css");
+      font-weight: 300;
+      font-style: normal;
+  }
+
+  $breakpoint_xs: 360px;
+  $breakpoint_sm: 768px;
+  $breakpoint_md: 1024px;
+  $breakpoint_lg: 1280px;
+  $breakpoint_xl: 14400px;
+  $breakpoint_xxl: 1600px;
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family:  "protipo", sans-serif;
+}
+
+body {
+    background-color: #ffc8a2 !important;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Serifa";
+    color: #3b7fd9;
+  }
+  
+  p {
+    font: "Serifa";
+  }

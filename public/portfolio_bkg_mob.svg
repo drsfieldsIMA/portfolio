@@ -15,19 +15,19 @@
 </g>
 <g>
 	<g>
-		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="17.5096" y1="73.4116" x2="1293.8096" y2="73.4116">
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="11.6277" y1="76.4116" x2="993.6472" y2="76.4116">
 			<stop  offset="0" style="stop-color:#EAEAEA"/>
 			<stop  offset="0.1821" style="stop-color:#EFF0F1"/>
 			<stop  offset="0.5729" style="stop-color:#F7F9FC"/>
 			<stop  offset="0.6556" style="stop-color:#FAFCFD"/>
 			<stop  offset="0.8847" style="stop-color:#FFFFFF"/>
 		</linearGradient>
-		<polygon class="st1" points="1,-2.7 1277.3,-2.7 1.6,149.5 		"/>
-		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="0.8" y1="73.4377" x2="1280" y2="73.4377">
+		<polygon class="st1" points="-1.1,0.3 980.9,0.3 -0.6,152.5 		"/>
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-1.229" y1="76.4377" x2="983.0217" y2="76.4377">
 			<stop  offset="0" style="stop-color:#FFFFFF"/>
 			<stop  offset="1" style="stop-color:#000000"/>
 		</linearGradient>
-		<path class="st2" d="M1274.6-2.6L1.9,149.4L1.3-2.6H1274.6 M1280-2.9H0.8l0.6,152.6L1280-2.9L1280-2.9z"/>
+		<path class="st2" d="M978.9,0.4l-979.2,152l-0.5-152H978.9 M983,0.1H-1.2l0.5,152.6L983,0.1L983,0.1z"/>
 	</g>
 </g>
 <g>
