@@ -1,3 +1,10 @@
+$breakpoint_xs: 360px;
+$breakpoint_sm: 768px;
+$breakpoint_md: 1024px;
+$breakpoint_lg: 1280px;
+$breakpoint_xl: 14400px;
+$breakpoint_xxl: 1600px;
+
 .btn-grid{
     display: grid;
     grid-template-columns: 1fr;
@@ -9,7 +16,7 @@
   
   .btn-block{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 21px;
     padding: 14px 21px
   }
@@ -35,4 +42,12 @@
     left: 0 !important;
     padding: 16px !important;
     color: #e6ebf3 !important;
+  }
+
+  @media only screen and (min-width: $breakpoint_md) {
+    .btn-block{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 21px;
+        padding: 14px 21px;
+      }
   }
