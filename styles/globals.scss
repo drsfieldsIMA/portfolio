@@ -89,7 +89,7 @@ $breakpoint_xxl: 1600px;
   text-align: left;
   transform: translateX(100%);
   animation: moving 30s linear infinite;
-  max-height: 30px;
+  max-height: 30px!important;
 }
 
 @keyframes moving {
