@@ -246,7 +246,7 @@ display: inline-flex;
   min-width: 100%;
   background:  url("../public/portfolio_bkg_2.svg") no-repeat center center;
   background-size: cover;
-  min-height: 178vh!important;
+  min-height: 360vh!important;
    h2{
     display: flex;
     padding-top: 2rem;
@@ -454,13 +454,13 @@ footer {
     justify-content: center;
 }
 .bio{
-font-size: 17px;
-    padding: 20px;
-    background-color: transparent;
-    color: #3b7fd9;
-    width: 91%;
-    margin: 15rem 8%;
-    text-align: justify!important;
+  font-size: 12px;
+  padding: 5px;
+  background-color: #fff;
+  color: #3b7fd9;
+  width: 91%;
+  margin: 10rem 8% 4rem 0;
+  text-align: justify !important;
 }
 
 @media only screen and (min-width: $breakpoint_sm) {
@@ -477,16 +477,13 @@ font-size: 17px;
 }
 
 .bio{
-  display: block;
-    position: relative;
-    margin-top: 1rem;
-    font-size: 17px;
-    padding: 20px;
-    background-color: transparent;
-    color: #3b7fd9;
-    width: 68%;
-    margin: 16rem 32%;
-    text-align:justify!important;
+  font-size: 12px;
+  padding: 5px;
+  background-color: #fff;
+  color: #3b7fd9;
+  width: 91%;
+  margin: 13rem 0 4rem 35%;
+  text-align: justify !important;
 }
 
 }
@@ -555,6 +552,19 @@ font-size: 17px;
   font-weight: 700;
   z-index: 2;
   left:-1px;
+}
+
+.bio{
+  display: block;
+    position: relative;
+    margin-top: 1rem;
+    font-size: 17px;
+    padding: 20px;
+    background-color: transparent;
+    color: #3b7fd9;
+    width: 68%;
+    margin: 13rem 0 4rem 35%;
+    text-align:justify!important;
 }
 
 
