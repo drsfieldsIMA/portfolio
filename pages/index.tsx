@@ -17,13 +17,15 @@ function Home() {
 				</Head>
 			</div>
 			<nav className='navbar navbar-expand-lg navbar-light bg-light'>
-				<Link className='navbar-brand' href='#'>
-					<Image
-						src='/logo_sf.svg'
-						alt='Picture of the author'
-						width={70}
-						height={70}
-					/>
+				<Link href='#'>
+					<a className='navbar-brand'>
+						<Image
+							src='/logo_sf.svg'
+							alt='Picture of the author'
+							width={70}
+							height={70}
+						/>
+					</a>
 				</Link>
 
 				<button
@@ -39,8 +41,8 @@ function Home() {
 				<div className='collapse navbar-collapse' id='navbarNav'>
 					<ul className='navbar-nav'>
 						<li className='nav-item active'>
-							<Link className='nav-link' href='/'>
-								Home
+							<Link href='/'>
+								<a className='nav-link'>Home</a>
 							</Link>
 						</li>
 					</ul>
@@ -100,12 +102,10 @@ function Home() {
 							</p>
 							<div className='btn-block'>
 								<Link href='https://feu-2-final-exam-3.vercel.app/'>
-									GreenCycle Site
+									<a className='btn-primary'>GreenCycle Site</a>
 								</Link>
-								<Link
-									href='https://github.com/drsfieldsIMA/AIDA_development/tree/main'
-									className='btn-primary'>
-									Git hub
+								<Link href='https://github.com/drsfieldsIMA/AIDA_development/tree/main'>
+									<a className='btn-primary'>Github</a>
 								</Link>
 							</div>
 						</Card>
@@ -125,15 +125,11 @@ function Home() {
 								Earth`s resources by leveraging the world wide web`s scale.
 							</p>
 							<div className='btn-block'>
-								<Link
-									href='https://feu-2-final-exam-3.vercel.app/'
-									className='btn-primary'>
-									GreenCycle Site
+								<Link href='https://feu-2-final-exam-3.vercel.app/'>
+									<a className='btn-primary'>GreenCycle Site</a>
 								</Link>
-								<Link
-									href='https://github.com/drsfieldsIMA/AIDA_development/tree/main'
-									className='btn-primary'>
-									Git hub
+								<Link href='https://github.com/drsfieldsIMA/AIDA_development/tree/main'>
+									<a className='btn-primary'>Git hub</a>
 								</Link>
 							</div>
 						</Card>
@@ -159,15 +155,11 @@ function Home() {
 								Positivity
 							</p>
 							<div className='btn-block'>
-								<Link
-									href='https://drsfields-ima-semester-project-2-resit-2.vercel.app/'
-									className='btn-primary'>
-									Level up News Site
+								<Link href='https://drsfields-ima-semester-project-2-resit-2.vercel.app/'>
+									<a className='btn-primary'>Level up News Site</a>
 								</Link>
-								<Link
-									href='https://github.com/drsfieldsIMA/drsfieldsIMA-semester-project-2-resit-2/tree/main'
-									className='btn-primary'>
-									Git hub
+								<Link href='https://github.com/drsfieldsIMA/drsfieldsIMA-semester-project-2-resit-2/tree/main'>
+									<a className='btn-primary'>Github</a>
 								</Link>
 							</div>
 						</Card>
@@ -181,15 +173,11 @@ function Home() {
 							/>
 							<p>Level up news positive news stories</p>
 							<div className='btn-block'>
-								<Link
-									href='https://drsfields-ima-semester-project-2-resit-2.vercel.app/'
-									className='btn-primary'>
-									Level up News Site
+								<Link href='https://drsfields-ima-semester-project-2-resit-2.vercel.app/'>
+									<a className='btn-primary'>Level up News Site</a>
 								</Link>
-								<Link
-									href='https://github.com/drsfieldsIMA/drsfieldsIMA-semester-project-2-resit-2/tree/main'
-									className='btn-primary'>
-									Git hub
+								<Link href='https://github.com/drsfieldsIMA/drsfieldsIMA-semester-project-2-resit-2/tree/main'>
+									<a className='btn-primary'>Github</a>
 								</Link>
 							</div>
 						</Card>
@@ -213,10 +201,8 @@ function Home() {
 							</div>
 							<p>Javascript Frameworks</p>
 							<div className='btn-block'>
-								<Link
-									className='btn-primary'
-									href='https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-drsfieldsIMA'>
-									Github
+								<Link href='https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-drsfieldsIMA'>
+									<a className='btn-primary'>Github</a>
 								</Link>
 							</div>
 						</Card>
@@ -230,10 +216,8 @@ function Home() {
 							/>
 							<p>Javascript Frameworks</p>
 							<div className='btn-block'>
-								<Link
-									className='btn-primary'
-									href='https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-drsfieldsIMA'>
-									Github
+								<Link href='https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-drsfieldsIMA'>
+									<a className='btn-primary'>Github</a>
 								</Link>
 							</div>
 						</Card>
@@ -256,15 +240,11 @@ function Home() {
 							</div>
 							<p>Hikes Adventure Trails</p>
 							<div className='btn-block'>
-								<Link
-									className='btn-primary'
-									href='http://www.fishcab.no/portfolio/hikes/'>
-									Hikes Adventures Trails
+								<Link href='http://www.fishcab.no/portfolio/hikes/'>
+									<a className='btn-primary'>Hikes Adventures Trails</a>
 								</Link>
-								<Link
-									className='btn-primary'
-									href=' https://github.com/drsfieldsIMA/hikes/tree/main'>
-									Github
+								<Link href=' https://github.com/drsfieldsIMA/hikes/tree/main'>
+									<a className='btn-primary'>Github</a>
 								</Link>
 							</div>
 						</Card>
@@ -278,15 +258,11 @@ function Home() {
 							/>
 							<p>Hikes Adventure Trails</p>
 							<div className='btn-block'>
-								<Link
-									className='btn-primary'
-									href='http://www.fishcab.no/portfolio/hikes/'>
-									Hikes Adventures Trails
+								<Link href='http://www.fishcab.no/portfolio/hikes/'>
+									<a className='btn-primary'>Hikes Adventures Trails</a>
 								</Link>
-								<Link
-									className='btn-primary'
-									href=' https://github.com/drsfieldsIMA/hikes/tree/main'>
-									Github
+								<Link href=' https://github.com/drsfieldsIMA/hikes/tree/main'>
+									<a className='btn-primary'>Github</a>
 								</Link>
 							</div>
 						</Card>
@@ -294,14 +270,8 @@ function Home() {
 				</section>
 			</main>
 			<footer className='footer'>
-				<Link
-					href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-					target='_blank'
-					rel='noopener noreferrer'>
-					Powered by{" "}
-					<span className='logo'>
-						<Image src='/vercel.svg' alt='Vercel Logo' width={72} height={16} />
-					</span>
+				<Link href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'>
+					<a>Portfolio</a>
 				</Link>
 			</footer>
 		</>
