@@ -243,10 +243,10 @@ display: inline-flex;
 
 .two{
   max-height: 200px;
-  min-width: 100%;
-  background:  url("../public/portfolio_bkg_2.svg") no-repeat center center;
-  background-size: cover;
-  min-height: 360vh!important;
+    min-width: 100%;
+    background: url("../public/portfolio_bkg_2.svg") no-repeat center center;
+    background-size: cover;
+    min-height: 571vh !important;
    h2{
     display: flex;
     padding-top: 2rem;
@@ -423,11 +423,11 @@ footer {
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
-  background-color: #3b7fd9;
+  background-color: white;
   margin-top: 0rem;
-  color: #3b7fd9 !important;
+  color: white !important;
   padding: 0;
-  height: 2.5rem !important;
+  height: 7rem !important;
 }
 
 .desktop-card{
@@ -459,7 +459,7 @@ footer {
   background-color: #fff;
   color: #3b7fd9;
   width: 91%;
-  margin: 10rem 8% 4rem 0;
+  margin: 13rem 5% 4rem 72px;
   text-align: justify !important;
 }
 
@@ -486,6 +486,10 @@ footer {
   text-align: justify !important;
 }
 
+.two{
+    min-height: 360vh !important;
+}
+
 }
 
 @media only screen and (min-width: $breakpoint_md) {
@@ -506,11 +510,6 @@ footer {
     left: 12px;
   }
 
-  .navbar-expand-lg .navbar-nav {
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-}
 .desktop-card{
   display: flex;
   background-color: #e6ebf3;

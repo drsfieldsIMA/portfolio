@@ -196,54 +196,44 @@ function Home() {
 						</Card>
 
 						<Card className='desktop-card'>
-							<h3>Letha Shoes</h3>
+							<h3>Javascript Frameworks</h3>
 							<div className='img-block'>
 								<Image
-									src='/Letha_desktop.png'
+									src='/frameworks_desktop.png'
 									alt='Picture of the author'
 									width={680}
 									height={365}
 									className='desktop_img'
 								/>
 								<Image
-									src='/Letha_mob.png'
+									src='/frameworks_mob.png'
 									alt='Picture of the author'
 									width={150}
 									height={365}
 								/>
 							</div>
-							<p>Letha Shoes Leather Tannery</p>
+							<p>Javascript Frameworks</p>
 							<div className='btn-block'>
 								<a
 									className='btn-primary'
-									href='http://www.fishcab.no/portfolio/shoes/'>
-									Letha Site
-								</a>
-								<a
-									className='btn-primary'
-									href='https://github.com/drsfieldsIMA/Letha_shoes/tree/main'>
+									href='https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-drsfieldsIMA'>
 									Github
 								</a>
 							</div>
 						</Card>
 						<Card className='mob-card'>
-							<h3>Letha Shoes</h3>
+							<h3>Javascript Frameworks</h3>
 							<Image
-								src='/Letha_mob.png'
+								src='/frameworks_mob.png'
 								alt='Picture of the author'
 								width={150}
 								height={365}
 							/>
-							<p>Letha Shoes Leather Tannery</p>
+							<p>Javascript Frameworks</p>
 							<div className='btn-block'>
 								<a
 									className='btn-primary'
-									href='http://www.fishcab.no/portfolio/shoes/'>
-									Letha Site
-								</a>
-								<a
-									className='btn-primary'
-									href='https://github.com/drsfieldsIMA/Letha_shoes/tree/main'>
+									href='https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-drsfieldsIMA'>
 									Github
 								</a>
 							</div>
@@ -301,16 +291,6 @@ function Home() {
 								</a>
 							</div>
 						</Card>
-					</div>
-				</section>
-				<section className='three'>
-					<h2>Github</h2>
-					<div className='btn-grid'>
-						<a
-							className='btn btn-large btn-primary'
-							href='https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-drsfieldsIMA'>
-							<i className='fas fa-link pull-left'></i>Javascript Frameworks
-						</a>
 					</div>
 				</section>
 			</main>
