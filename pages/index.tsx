@@ -240,7 +240,7 @@ function Home() {
 							</div>
 							<p>Hikes Adventure Trails</p>
 							<div className='btn-block'>
-								<Link href='http://www.fishcab.no/portfolio/hikes/'>
+								<Link href='http://www.fishcab.no/portfolio/hikes'>
 									<a className='btn-primary'>Hikes Adventures Trails</a>
 								</Link>
 								<Link href=' https://github.com/drsfieldsIMA/hikes/tree/main'>
@@ -258,7 +258,7 @@ function Home() {
 							/>
 							<p>Hikes Adventure Trails</p>
 							<div className='btn-block'>
-								<Link href='http://www.fishcab.no/portfolio/hikes/'>
+								<Link href='http://www.fishcab.no/portfolio/hikes'>
 									<a className='btn-primary'>Hikes Adventures Trails</a>
 								</Link>
 								<Link href=' https://github.com/drsfieldsIMA/hikes/tree/main'>
