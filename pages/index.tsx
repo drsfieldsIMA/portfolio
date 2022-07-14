@@ -42,11 +42,6 @@ function Home() {
 								Home
 							</a>
 						</li>
-						<li className='nav-item'>
-							<a className='nav-link' href='/design'>
-								Design Process
-							</a>
-						</li>
 					</ul>
 				</div>
 			</nav>
@@ -68,7 +63,7 @@ function Home() {
 						<p className='bio'>
 							I am happiest solving problems with concise computer code whether
 							it be solving the trajectory of a satellite or coding the user
-							interface in-front of you. I am developing websites currently with
+							interface infront of you. I am developing websites currently with
 							Javascript, Next, React and HTML. I have also taught engineering
 							undergrads how to utilize engineering software and Virtual Reality
 							applications using C++.

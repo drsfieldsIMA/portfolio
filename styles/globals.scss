@@ -560,7 +560,7 @@ footer {
     margin-top: 1rem;
     font-size: 17px;
     padding: 20px;
-    background-color: transparent;
+    background-color: white;
     color: #3b7fd9;
     width: 60%;
     margin: 22rem 0 4rem 35%;
@@ -582,6 +582,11 @@ footer {
   right: -71px;
 }
 
+.two {
+  max-height: 200px;
+  min-width: 100%;
+  min-height: 167vh!important;
+}
 
 }
 
