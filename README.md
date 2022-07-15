@@ -7,7 +7,7 @@ Portfolio
 
 ## Description
 
-    Shaun Fields React/Next.js web developer 
+Shaun Fields React/Next.js web developer 
 
 ## Built With
 
