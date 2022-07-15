@@ -1,8 +1,7 @@
 # Portfolio
 Final site https://feu-2-final-exam-1-drsfieldsima.vercel.app/
 
-![]
-(https://github.com/drsfieldsIMA/portfolio/blob/main/public/portfolio_picture.png)
+![https://github.com/drsfieldsIMA/portfolio/blob/main/public/portfolio_picture.png]
 
 Portfolio 
 
