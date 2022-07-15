@@ -87,12 +87,6 @@ function Home() {
 									height={365}
 									className='desktop_img'
 								/>
-								<Image
-									src='/greencycle_mob.png'
-									alt='Picture of the author'
-									width={150}
-									height={365}
-								/>
 							</div>
 							<p>
 								Ever wondered how you can recycle more phones, furniture,
@@ -143,12 +137,6 @@ function Home() {
 									height={365}
 									className='desktop_img'
 								/>
-								<Image
-									src='/lun_mob.png'
-									alt='Picture of the author'
-									width={150}
-									height={365}
-								/>
 							</div>
 							<p>
 								Level up news positive news stories. Level up news | Powered by
@@ -192,12 +180,6 @@ function Home() {
 									height={365}
 									className='desktop_img'
 								/>
-								<Image
-									src='/frameworks_mob.png'
-									alt='Picture of the author'
-									width={150}
-									height={365}
-								/>
 							</div>
 							<p>Javascript Frameworks</p>
 							<div className='btn-block'>
@@ -230,12 +212,6 @@ function Home() {
 									width={680}
 									height={365}
 									className='desktop_img'
-								/>
-								<Image
-									src='/hike_mob.png'
-									alt='Picture of the author'
-									width={150}
-									height={365}
 								/>
 							</div>
 							<p>Hikes Adventure Trails</p>
