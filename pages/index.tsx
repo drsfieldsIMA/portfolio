@@ -219,7 +219,7 @@ function Home() {
 								<Link href='http://www.fishcab.no/portfolio/hikes'>
 									<a className='btn-primary'>Hikes Adventures Trails</a>
 								</Link>
-								<Link href=' https://github.com/drsfieldsIMA/hikes/tree/main'>
+								<Link href='https://github.com/drsfieldsIMA/hikes/tree/main'>
 									<a className='btn-primary'>Github</a>
 								</Link>
 							</div>
@@ -237,7 +237,7 @@ function Home() {
 								<Link href='http://www.fishcab.no/portfolio/hikes'>
 									<a className='btn-primary'>Hikes Adventures Trails</a>
 								</Link>
-								<Link href=' https://github.com/drsfieldsIMA/hikes/tree/main'>
+								<Link href='https://github.com/drsfieldsIMA/hikes/tree/main'>
 									<a className='btn-primary'>Github</a>
 								</Link>
 							</div>
