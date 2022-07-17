@@ -3,11 +3,9 @@ Final site https://feu-2-final-exam-1-drsfieldsima.vercel.app/
 
 ![](https://github.com/drsfieldsIMA/portfolio/blob/main/public/portfolio_picture.png)
 
-Portfolio 
-
 ## Description
 
-Shaun Fields React/Next.js web developer and Mechanical Engineer
+Portfolio  for Shaun Fields React/Next.js web developer and Mechanical Engineer
 
 ## Built With
 
