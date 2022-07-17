@@ -7,7 +7,7 @@ Portfolio
 
 ## Description
 
-Shaun Fields React/Next.js web developer 
+Shaun Fields React/Next.js web developer and Mechanical Engineer
 
 ## Built With
 
@@ -41,16 +41,13 @@ Make sure to open a pull request so code can be reviewed.
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+This is where you can contact me.
 
-[My LinkedIn page](www.linkedin.com)
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
+[My LinkedIn page](https://www.linkedin.com/in/shaun-fields-8293b7a2/)
+[Email](drsfieldsIMA@gmail.com)
 
 ## Acknowledgments
 
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Thanks go to Noroff School of technology and media.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
