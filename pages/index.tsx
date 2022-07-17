@@ -98,7 +98,7 @@ function Home() {
 								<Link href='https://feu-2-final-exam-3.vercel.app/'>
 									<a className='btn-primary'>GreenCycle Site</a>
 								</Link>
-								<Link href='https://github.com/drsfieldsIMA/AIDA_development/tree/main'>
+								<Link href='https://github.com/drsfieldsIMA/greencycle'>
 									<a className='btn-primary'>Github</a>
 								</Link>
 							</div>
@@ -122,7 +122,7 @@ function Home() {
 								<Link href='https://feu-2-final-exam-3.vercel.app/'>
 									<a className='btn-primary'>GreenCycle Site</a>
 								</Link>
-								<Link href='https://github.com/drsfieldsIMA/AIDA_development/tree/main'>
+								<Link href='https://github.com/drsfieldsIMA/greencycle'>
 									<a className='btn-primary'>Git hub</a>
 								</Link>
 							</div>
